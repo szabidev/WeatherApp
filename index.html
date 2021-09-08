@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&family=Urbanist:wght@100;200;300;400&display=swap"
+        rel="stylesheet">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <form action="" class="form-control">
+                <input type="text" class="form-input" placeholder="Search for a city..." autocomplete="off" required>
+            </form>
+            <div class="btn-container">
+                <button class="weather-btn btn" type="submit" onsubmit="return false">Show Weather</button>
+                <button class="forecast-btn btn" type="submit" onsubmit="return false">Show Forecast</button>
+            </div>
+        </nav>
+        <div class="card-container">
+                <div id="card" class="display-card">
+                    <div class="icon">ICON</div>
+                    <!-- icon representing the current weather -->
+                    <h3 class="city">City name</h3>
+                    <p class="country">Country</p>
+                    <h2 class="celsius">25 <span>&#x2103;</span></h2>
+                    <p class="description">Small clouds</p>
+                    <p class="day">Monday</p>
+                    <p class="date">08/09/2021</p>
+                </div>
+        </div>
+        <div class="google-map-container">GOOGLE MAP API</div>
+          
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
