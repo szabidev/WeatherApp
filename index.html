@@ -25,20 +25,31 @@
         </nav>
         <div class="card-container">
                 <div id="card" class="display-card">
-                    <div class="icon">ICON</div>
+                    <canvas class="icon" width="128" height="128" style="position: absolute; top:1rem; left: 175px;"></canvas>
                     <!-- icon representing the current weather -->
                     <h3 class="city">City name</h3>
+                    <!-- Stile the country and make it an abbreviaton -->
                     <p class="country">Country</p>
-                    <h2 class="celsius">25 <span>&#x2103;</span></h2>
+                    <h2 class="degree">25 <span class="unit">&#x2103;</span></h2>
                     <p class="description">Small clouds</p>
+                    <!-- Add sunrise and susnet div -->
+                    <!-- get it with javascript -->
                     <p class="day">Monday</p>
+                    <!-- get it with javascript -->
                     <p class="date">08/09/2021</p>
                 </div>
+                <div class="google-map-container">GOOGLE MAP API</div>
         </div>
-        <div class="google-map-container">GOOGLE MAP API</div>
-          
+          <div class="forecast-container">
+              <div class="day">1</div>
+              <div class="day">2</div>
+              <div class="day">3</div>
+              <div class="day">4</div>
+              <div class="day">5</div>
+              <div class="day">6</div>
+          </div>
     </div>
-
+    <script src="skycons.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
