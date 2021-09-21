@@ -19,64 +19,42 @@
                 <input type="text" class="form-input" placeholder="Search for a city..." autocomplete="off" required>
                 <button class="weather-btn btn" type="submit" onsubmit="return false">Show Weather</button>
             </form>
-            <!-- <div class="btn-container"> -->
             <button class="forecast-btn btn" type="submit" onsubmit="return false">Show Forecast</button>
-            <!-- </div> -->
         </nav>
         <div class="card-container">
                 <div id="card" class="display-card">
                     <canvas class="icon" width="128" height="128" style="position: absolute; top:1rem; left: 175px;"></canvas>
                     <!-- icon representing the current weather -->
                     <h3 class="city"></h3>
-                    <!-- Stile the country and make it an abbreviaton -->
                     <p class="country"></p>
                     <div class="sunrise-container">
-                        <canvas id="clear_day" width="32" height="32"></canvas>
+                        <canvas id="clear_day" class="icon" width="32" height="32"></canvas>
                         <p class="sunrise"></p>
                     </div>
                     <div class="sunset-container">
-                        <canvas id="clear_night" width="32" height="32"></canvas>
+                        <canvas id="clear_night" class="icon" width="32" height="32"></canvas>
                         <p class="sunset"></p>
                     </div>
                     <h2 class="degree"></h2>
                     <p class="description"></p>
-                    <!-- get it with javascript -->
                     <p class="day"></p>
-                    <!-- get it with javascript -->
                     <p class="date"></p>
                 </div>
-                <div id="map" class="google-map-container"></div>
+                <!-- <div id="map" class="google-map-container"></div> -->
         </div>
-          <div class="forecast-container">
-              <div class="day1 day">
-                  <h4 class="forecast-day">Day</h4>
-                  <p>00:00</p>
-                  <!-- canvas -->
-                  <p class="dt">Degree</p>
-                  <p>03:00</p>
-                  <p class="dt">Degree</p>
-                  <p>06:00</p>
-                  <p class="dt">Degree</p>
-                  <p>09:00</p>
-                  <p class="dt">Degree</p>
-                  <p>12:00</p>
-                  <p class="dt">Degree</p>
-                  <p>15:00</p>
-                  <p class="dt">Degree</p>
-                  <p>18:00</p>
-                  <p class="dt">Degree</p>
-                  <p>21:00</p>
-                  <p class="dt">Degree</p>
-              </div>
-              <div class="day2 day">2</div>
-              <div class="day3 day">3</div>
-              <div class="day4 day">4</div>
-              <div class="day5 day">5</div>
-              <div class="day6 day">6</div>
-          </div>
-    </div>
-    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjNNfXjEGrlhTRW9u8sq7sE-Tnk1ebAZ0&callback=initMap">
-    </script>
+          <div class="forecast-container"></div>
+        </div>
+
+    <!-- <script>
+        const initMap = () => {
+                let mapProp = {
+                    center: new google.maps.LatLng(46.771210, 23.623634),
+                    zoom: 4
+                };
+                let map = new google.maps.Map(map, mapProp)
+            }
+    </script>    
+    <script async="false" defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjNNfXjEGrlhTRW9u8sq7sE-Tnk1ebAZ0&callback=initMap"></script> -->
     <script src="./src/skycons.js"></script>
     <script src="./src/app.js"></script>
 </body>
